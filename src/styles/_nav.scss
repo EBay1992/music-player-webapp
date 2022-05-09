@@ -1,0 +1,36 @@
+.nav {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  min-height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  h1 {
+    padding-left: 2.5rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    border: 2px solid rgb(65, 65, 65);
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 30;
+    &:hover {
+      background-color: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 90%;
+  }
+
+  h1 {
+    opacity: 0;
+  }
+}

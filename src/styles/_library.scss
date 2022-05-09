@@ -1,0 +1,37 @@
+.library {
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+  top: 0;
+  left: 0;
+
+  width: 20rem;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  box-shadow: 2px 2px 50px rgb(204, 204, 204);
+
+  overflow: scroll;
+
+  transition: all 0.3s ease-in-out;
+
+  h2 {
+    padding: 1rem 2rem;
+  }
+}
+
+.libraryIsOpen {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}
