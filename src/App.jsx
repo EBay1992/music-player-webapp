@@ -16,7 +16,7 @@ const App = () => {
     currentTime: 0,
   });
   const [isPlaying, setIsPlaying] = useState(false);
-  const [libraryIsOpen, setLibraryIsOpen] = useState(true);
+  const [libraryIsOpen, setLibraryIsOpen] = useState(false);
 
   const audioRef = useRef(null);
 
